@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@Maxwell's 001</title>
+    <script type="text/javascript">
+        function validate() {
+            var name = document.getElementById("name");
+            var uname = document.getElementById("uname");
+            var email = document.getElementById("email");
+            var prd = document.getElementById("prd");
+            var confirm = document.getElementById("confirm");
+
+            if (name.value == "" || uname.value == "" || email.value == "" || prd.value == "" || confirm.value == ""){
+                alert("Please fill all necessary blank spaces");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+    </script>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<style>
+  body {
+      background-image: url("images/Mill.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+</style>
+<form action="" class="inner" onsubmit="return validate()">
+    <legend class="h1">Bootstrap 4 Form Validation</legend>
+<hr>
+
+<label for="name">Name</label><br>
+<input type="text" id="name" placeholder="Name"><br><br>
+
+<label for="uname">Username</label><br>
+<input type="text" id="uname" placeholder="Username"><br><br>
+
+<label for="email">Email</label><br>
+<input type="email" id="email" placeholder="Email"><br><br>
+
+<label for="prd">Password</label><br>
+<input type="password" id="prd" placeholder="Password"><br><br>
+
+<label for="confirm">Confirm password</label><br>
+<input type="password" id="confirm" placeholder="Confirm password"><br><br>
+<lable>Message</lable>
+    <br>
+  <textarea name="" id=""placeholder="Message" cols="70" rows="4"></textarea><br><br>
+
+    <input type="submit" value="Send" class="s2"><br>
+
+
+
+</form>
+</body>
+</html>
